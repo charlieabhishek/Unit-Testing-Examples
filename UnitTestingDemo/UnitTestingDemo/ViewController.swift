@@ -12,7 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        HttpClient().get(url: URL(string:"https://jsonplaceholder.typicode.com/todos/1")!) { (data, error) in
+            guard error == nil else{
+                print("error ==>\(error)")
+                return
+            }
+            do{
+                let json = try JSONSerialization.jsonObject(with: data!, options: JSONSerialization.ReadingOptions.mutableLeaves)
+                print(json)
+            }catch{
+                print(error)
+            }
+        }
     }
 
 
