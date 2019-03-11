@@ -7,15 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF42891B22369FD300B47185 /* UrlSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42891A22369FD300B47185 /* UrlSessionProtocol.swift */; };
+		EF42891D2236A55F00B47185 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42891C2236A55F00B47185 /* MockURLSession.swift */; };
 		EFB199A22234185D00863BC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB199A12234185D00863BC6 /* AppDelegate.swift */; };
 		EFB199A42234185D00863BC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB199A32234185D00863BC6 /* ViewController.swift */; };
 		EFB199A72234185D00863BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB199A52234185D00863BC6 /* Main.storyboard */; };
 		EFB199A92234185E00863BC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFB199A82234185E00863BC6 /* Assets.xcassets */; };
 		EFB199AC2234185E00863BC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB199AA2234185E00863BC6 /* LaunchScreen.storyboard */; };
 		EFB199B4223425C800863BC6 /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB199B3223425C800863BC6 /* HttpClient.swift */; };
+		EFB199BC2234B6C600863BC6 /* UnitTestingDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB199BB2234B6C600863BC6 /* UnitTestingDemoTests.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EFB199BE2234B6C600863BC6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EFB199962234185D00863BC6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EFB1999D2234185D00863BC6;
+			remoteInfo = UnitTestingDemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EF42891A22369FD300B47185 /* UrlSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionProtocol.swift; sourceTree = "<group>"; };
+		EF42891C2236A55F00B47185 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		EFB1999E2234185D00863BC6 /* UnitTestingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB199A12234185D00863BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB199A32234185D00863BC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,10 +39,20 @@
 		EFB199AB2234185E00863BC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFB199AD2234185E00863BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFB199B3223425C800863BC6 /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		EFB199B92234B6C600863BC6 /* UnitTestingDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB199BB2234B6C600863BC6 /* UnitTestingDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingDemoTests.swift; sourceTree = "<group>"; };
+		EFB199BD2234B6C600863BC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		EFB1999B2234185D00863BC6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFB199B62234B6C600863BC6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				EFB199A02234185D00863BC6 /* UnitTestingDemo */,
+				EFB199BA2234B6C600863BC6 /* UnitTestingDemoTests */,
 				EFB1999F2234185D00863BC6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				EFB1999E2234185D00863BC6 /* UnitTestingDemo.app */,
+				EFB199B92234B6C600863BC6 /* UnitTestingDemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,8 +90,19 @@
 				EFB199AA2234185E00863BC6 /* LaunchScreen.storyboard */,
 				EFB199AD2234185E00863BC6 /* Info.plist */,
 				EFB199B3223425C800863BC6 /* HttpClient.swift */,
+				EF42891A22369FD300B47185 /* UrlSessionProtocol.swift */,
+				EF42891C2236A55F00B47185 /* MockURLSession.swift */,
 			);
 			path = UnitTestingDemo;
+			sourceTree = "<group>";
+		};
+		EFB199BA2234B6C600863BC6 /* UnitTestingDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EFB199BB2234B6C600863BC6 /* UnitTestingDemoTests.swift */,
+				EFB199BD2234B6C600863BC6 /* Info.plist */,
+			);
+			path = UnitTestingDemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +125,24 @@
 			productReference = EFB1999E2234185D00863BC6 /* UnitTestingDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
+		EFB199B82234B6C600863BC6 /* UnitTestingDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EFB199C22234B6C600863BC6 /* Build configuration list for PBXNativeTarget "UnitTestingDemoTests" */;
+			buildPhases = (
+				EFB199B52234B6C600863BC6 /* Sources */,
+				EFB199B62234B6C600863BC6 /* Frameworks */,
+				EFB199B72234B6C600863BC6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EFB199BF2234B6C600863BC6 /* PBXTargetDependency */,
+			);
+			name = UnitTestingDemoTests;
+			productName = UnitTestingDemoTests;
+			productReference = EFB199B92234B6C600863BC6 /* UnitTestingDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +155,10 @@
 				TargetAttributes = {
 					EFB1999D2234185D00863BC6 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					EFB199B82234B6C600863BC6 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = EFB1999D2234185D00863BC6;
 					};
 				};
 			};
@@ -116,6 +176,7 @@
 			projectRoot = "";
 			targets = (
 				EFB1999D2234185D00863BC6 /* UnitTestingDemo */,
+				EFB199B82234B6C600863BC6 /* UnitTestingDemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +192,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFB199B72234B6C600863BC6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -138,13 +206,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF42891B22369FD300B47185 /* UrlSessionProtocol.swift in Sources */,
 				EFB199A42234185D00863BC6 /* ViewController.swift in Sources */,
 				EFB199B4223425C800863BC6 /* HttpClient.swift in Sources */,
+				EF42891D2236A55F00B47185 /* MockURLSession.swift in Sources */,
 				EFB199A22234185D00863BC6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFB199B52234B6C600863BC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFB199BC2234B6C600863BC6 /* UnitTestingDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EFB199BF2234B6C600863BC6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EFB1999D2234185D00863BC6 /* UnitTestingDemo */;
+			targetProxy = EFB199BE2234B6C600863BC6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EFB199A52234185D00863BC6 /* Main.storyboard */ = {
@@ -318,6 +404,46 @@
 			};
 			name = Release;
 		};
+		EFB199C02234B6C600863BC6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8Y3PV7CS9;
+				INFOPLIST_FILE = UnitTestingDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CharlieAbhishek.UnitTestingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTestingDemo.app/UnitTestingDemo";
+			};
+			name = Debug;
+		};
+		EFB199C12234B6C600863BC6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J8Y3PV7CS9;
+				INFOPLIST_FILE = UnitTestingDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CharlieAbhishek.UnitTestingDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UnitTestingDemo.app/UnitTestingDemo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -335,6 +461,15 @@
 			buildConfigurations = (
 				EFB199B12234185E00863BC6 /* Debug */,
 				EFB199B22234185E00863BC6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EFB199C22234B6C600863BC6 /* Build configuration list for PBXNativeTarget "UnitTestingDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EFB199C02234B6C600863BC6 /* Debug */,
+				EFB199C12234B6C600863BC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

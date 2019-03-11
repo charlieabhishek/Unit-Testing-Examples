@@ -14,7 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         HttpClient().get(url: URL(string:"https://jsonplaceholder.typicode.com/todos/1")!) { (data, error) in
             guard error == nil else{
-                print("error ==>\(error)")
+                print("error ==>\(String(describing: error))")
                 return
             }
             do{
