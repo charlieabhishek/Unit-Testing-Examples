@@ -17,11 +17,19 @@ class HttpClient{
     init(session:URLSessionProtocol = URLSession.shared) {
         self.session = session
     }
-    func get(url:URL, completion:DataResult){
-        session.dataTask(with: url) { (_, _, _)->Void in }
+    
+    func get(url:URL, completion:@escaping DataResult){
+        let task = session.dataTask(with: url) { (data, response, error) in
+            completion(data,error)
+        }
+        task.resume()
     }
 }
 
 extension URLSession:URLSessionProtocol{
+    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskProtocol {
+       return (dataTask(with: url, completionHandler: completionHandler) as URLSessionDataTask) as URLSessionDataTaskProtocol
+    }
+    
     
 }

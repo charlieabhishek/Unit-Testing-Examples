@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		EF42891B22369FD300B47185 /* UrlSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42891A22369FD300B47185 /* UrlSessionProtocol.swift */; };
 		EF42891D2236A55F00B47185 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42891C2236A55F00B47185 /* MockURLSession.swift */; };
+		EF42891F2236A92600B47185 /* URLSessionDataTaskProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF42891E2236A92600B47185 /* URLSessionDataTaskProtocol.swift */; };
+		EF4289212236A98F00B47185 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF4289202236A98F00B47185 /* MockURLSessionDataTask.swift */; };
 		EFB199A22234185D00863BC6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB199A12234185D00863BC6 /* AppDelegate.swift */; };
 		EFB199A42234185D00863BC6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB199A32234185D00863BC6 /* ViewController.swift */; };
 		EFB199A72234185D00863BC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFB199A52234185D00863BC6 /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 /* Begin PBXFileReference section */
 		EF42891A22369FD300B47185 /* UrlSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlSessionProtocol.swift; sourceTree = "<group>"; };
 		EF42891C2236A55F00B47185 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		EF42891E2236A92600B47185 /* URLSessionDataTaskProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskProtocol.swift; sourceTree = "<group>"; };
+		EF4289202236A98F00B47185 /* MockURLSessionDataTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSessionDataTask.swift; sourceTree = "<group>"; };
 		EFB1999E2234185D00863BC6 /* UnitTestingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB199A12234185D00863BC6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EFB199A32234185D00863BC6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +96,8 @@
 				EFB199B3223425C800863BC6 /* HttpClient.swift */,
 				EF42891A22369FD300B47185 /* UrlSessionProtocol.swift */,
 				EF42891C2236A55F00B47185 /* MockURLSession.swift */,
+				EF42891E2236A92600B47185 /* URLSessionDataTaskProtocol.swift */,
+				EF4289202236A98F00B47185 /* MockURLSessionDataTask.swift */,
 			);
 			path = UnitTestingDemo;
 			sourceTree = "<group>";
@@ -208,9 +214,11 @@
 			files = (
 				EF42891B22369FD300B47185 /* UrlSessionProtocol.swift in Sources */,
 				EFB199A42234185D00863BC6 /* ViewController.swift in Sources */,
+				EF42891F2236A92600B47185 /* URLSessionDataTaskProtocol.swift in Sources */,
 				EFB199B4223425C800863BC6 /* HttpClient.swift in Sources */,
 				EF42891D2236A55F00B47185 /* MockURLSession.swift in Sources */,
 				EFB199A22234185D00863BC6 /* AppDelegate.swift in Sources */,
+				EF4289212236A98F00B47185 /* MockURLSessionDataTask.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
