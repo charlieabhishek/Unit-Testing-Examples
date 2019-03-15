@@ -11,6 +11,8 @@ import Foundation
 class MockURLSession: URLSessionProtocol{
     var lastURL: URL?
     var nextDataTask = MockURLSessionDataTask()
+    var nextData:Data?
+    var nextError:Error?
     
     func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTaskProtocol {
         lastURL = url
